@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>브라운편입학원</title>
+		<link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+		<meta charset="utf-8" />
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /> -->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header" class="dark">
+		
+			</section>
+
+		<!-- First -->
+			<section id="first" class="main">
+			
+				<header>
+
+
+						<style>
+							*{padding:0; margin:0; text-decoration:none; list-style: none; }
+							nav{ position:sticky; z-index: 1;
+								left: 0; top:0; width: 100%; padding-top: 10px 0px; background: #fff;box-shadow: 0 0 5px rgba(206, 206, 206, 0.5);}
+							nav div{display: flex;position: relative; width: 700px;margin: 0 auto;}
+							nav div a{flex: 1;display: block;height: 40px;line-height: 40px;text-align: center;color: #8f8f8f}
+							nav div > span{position: absolute; left: 0; bottom: 0; width: 175px;height: 3px;background: #9B111E;transition: all .5s;}
+						</style>
+						<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+						<script>
+						$(document).ready(function(){
+							$("nav a").click(function(){
+								var _this = $(this);
+								var count = 0;
+								var widthspan = $("nav div > span").css("width").replace("px","");//maybe 100;
+							
+								$(this).parent().children().each(function(){
+									if(_this.html() === $(this).html()){
+										$("nav div > span").css({left: widthspan*count+"px",opacity: 1});
+										$(this).css({color:"#000"}).siblings().css({color:"#8f8f8f"});
+										
+									
+									}
+									count++;
+								});
+							});
+						});
+						
+						</script>
+						</head>
+						<body>
+							<nav>
+								
+									
+								<div class="fixed">
+									
+									
+									<a href="#first"><span>브라운 선택이유</span></a>
+									<a href="#second"><span>과정</span></a>
+									<a href="#third"><span>FAQ</span></a>
+									<a href="#fourth"><span>무료 상담신청</span></a>
+									<span></span>
+								</div>
+							</nav>
+						
+				 
+		
+				<div class="container">
+					<span class="image featured"><span><img src="images/설명.png" alt="">
+				</span>
+
+				
+									</div>	
+
+		
+
+		<!-- Second -->
+			<section id="second" class="main">
+			
+					<div class="container">
+					<br>
+					<br>
+					<br>
+							<span class="image featured"><span><img src="images/과정소개.png" alt="">
+						</span>
+		
+						
+								
+				
+					</div>
+		
+	
+
+		<!-- Third -->
+			<section id="third" class="main">
+		
+					<div class="container">
+						<br>
+						<br>
+						<br>
+							<span class="image featured"><span><img src="images/faq.png" alt="">
+						</span>
+		
+						
+									
+					</div>
+		
+				
+				
+
+				
+		<!-- Fourth -->
+			<section id="fourth" class="main">
+		
+					<div class="container">
+						<br>
+						<br>
+						<br>
+					<span class="image featured"><span><img src="images/상담신청.png" alt=""></span>
+
+					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfrR4sBvBE0_OOUoejVZWmRQI6TYq8IR0RSC2iUwyJphV-5Kg/viewform?embedded=true" width="640" height="705" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">로드 중…</iframe>
+	</header>
+
+		
+
+		<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+					
+					<li><a href="https://www.facebook.com/broun1987" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="https://www.youtube.com/channel/UC_PQbYBRqZ4uEmqH9JNN5Cw;"><img src="http://gi.esmplus.com/yangde1230/btn_foot_youtube.png" alt="유튜브"></a>	</li>
+					<li><a href="https://story.kakao.com/ch/brounedu"target="_blank"><img src="http://gi.esmplus.com/yangde1230/btn_foot_kakao.png" alt="카카오플러스친구"></a></li>
+					<li><a href="https://blog.naver.com/broun_edu"target="_blank"><img src="http://gi.esmplus.com/yangde1230/btn_foot_naver.png" alt="네이버 블로그"></a></li>
+				</ul>
+				<div class="copyright">
+					<ul class="menu">
+						<li>&copy; Copyright(C) Broun Corp. All Rights Reserved</li><li>Design: BROUN</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.js"></script>
+			<script src="assets/js/jquery.smooth-scroll.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				// Need this for "newer" versions of jQuery, which have removed $.browser
+				$.browser = $.browser || {msie: false};
+				</script>
+				<script src="../assets/js/jquery.ba-bbq.js"></script>
+				<script>
+				  $(document)
+				  .on('click', 'a[href*="#"]', function() {
+					if (this.hash && this.pathname === location.pathname) {
+					  $.bbq.pushState('#/' + this.hash.slice(1));
+				
+					  return false;
+					}
+				  })
+				  .ready(function() {
+					$(window).bind('hashchange', function(event) {
+					  var tgt = location.hash.replace(/^#\/?/, '');
+			
+					  if (document.getElementById(tgt)) {
+						$.smoothScroll({scrollTarget: '#' + tgt});
+					  }
+					});
+			  
+					$(window).trigger('hashchange');
+				  });
+				</script>
+			  
+			  
+			
+			
+
+	</body>
+</html>
